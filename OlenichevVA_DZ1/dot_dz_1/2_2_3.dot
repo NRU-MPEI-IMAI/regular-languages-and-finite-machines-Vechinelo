@@ -1,0 +1,11 @@
+digraph{
+    rankdir = LR;
+    node [shape=doublecircle]
+    "q3s0,q3s1"
+    node [shape=circle]
+    "q0s1,q0s0" -> "q1s0,q1s1" [label="a,b"]
+    "q1s0,q1s1" -> "q2s0,q2s1" [label="a,b"]
+    "q2s0,q2s1" -> "q3s0,q3s1" [label="a,b"]
+    q3s0 -> "q3s0,q3s1" [label="a,b"]
+    "q3s0,q3s1" -> q3s0 [label="a,b"]
+}

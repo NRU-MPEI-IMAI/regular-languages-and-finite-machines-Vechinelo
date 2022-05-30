@@ -1,0 +1,12 @@
+digraph{
+    rankdir = LR;
+    node [shape=doublecircle]
+    q2q5q8, q2q5q7q8, q2q5q8
+    node [shape=circle]
+    q0 -> q2q5q8 [label="a"]
+    q2q5q8 -> q3q6 [label="b"]
+    q3q6 -> q2q5q7q8 [label="a"]
+    q2q5q7q8 -> q3q6 [label="b"]
+    q2q5q7q8 -> q2q5q8 [label="a"]    
+
+}

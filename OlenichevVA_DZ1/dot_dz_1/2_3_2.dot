@@ -1,0 +1,15 @@
+digraph{
+    rankdir = LR;
+    node [shape=point]
+    start
+    node [shape=doublecircle]
+    s0
+    node [shape=circle]
+    start -> s0
+    s1 -> s2 [label="b"]
+    s1 -> s1 [label="a"]
+    s0 -> s1 [label="b"]
+    s0 -> s0 [label="a"]
+    s2 -> s0 [label="b"]
+    s2 -> s2 [label="a"]
+}

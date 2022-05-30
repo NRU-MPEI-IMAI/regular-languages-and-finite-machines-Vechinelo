@@ -1,0 +1,13 @@
+digraph{
+    rankdir = LR;
+    node [shape=point]
+    start
+    node [shape=doublecircle]
+    0
+    node [shape=circle]
+    start -> 0
+    0 -> 1 [label="a,b"]
+    0 -> 0 [label="a"]
+    1 -> 2 [label="a,b"]
+    2 -> 0 [label="b"]
+}
